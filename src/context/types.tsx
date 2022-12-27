@@ -1,3 +1,10 @@
+export type StoreProps = {
+  id: number
+  name: string
+  price: number
+  img: string
+}
+
    export type DetailCartItem = {
     id: number;
     name: string;
