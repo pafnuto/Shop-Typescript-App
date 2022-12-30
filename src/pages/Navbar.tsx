@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import './bar.scss'
+import './pages.scss'
 
 const Navbar = () => {
     //const { getNoOfItemsInCart, setShouldShow } = useCartContext();

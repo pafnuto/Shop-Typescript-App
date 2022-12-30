@@ -1,7 +1,9 @@
 import React from 'react';
 import { StoreProps } from '../context/types'
+import { formatCurrency } from "../utils/formatCurrency"
 
-export function Store ({ id, name, price, img }: StoreProps) {
+
+export function itemsStore ({ id, name, price, img }: StoreProps) {
 
   const {
     itemCartQuantity,

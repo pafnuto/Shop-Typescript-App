@@ -13,21 +13,20 @@ export type StoreProps = {
     quantity: number;
   };
   
-    type cartItem = {
+  export type cartItem = {
     id: number;
     quantity: number;
   };
   
-  type CartContext = {
-    cartItems: cartItem[];
-    getCartItems: (id: number) => number;
-    increaseCartQuantity: (id: number) => void;
-    decreaseCartQuantity: (id: number) => void;
-    removeCartItem: (id: number) => void;
-    getNoOfItemsInCart: () => number;
-    shouldShow: boolean;
-    setShouldShow: (value: boolean) => void;
-    handleHide: () => void;
-    getItemsForCartOffCanvas: () => DetailCartItem[];
-  };
+  export type ItemCartContext = {
+    openCart: () => void
+    closeCart: () => void
+    getItemQuantity: (id: number) => number
+    plusCartQuantity: (id: number) => void
+    minusCartQuantity: (id: number) => void
+    removeFromCart: (id: number) => void
+    cartQuantity: number
+    cartItems: cartItem[]
+  }
+  
   
